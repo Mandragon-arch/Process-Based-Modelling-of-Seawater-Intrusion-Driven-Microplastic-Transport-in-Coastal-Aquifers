@@ -1,0 +1,17 @@
+# MODFLOW 6 output files
+*.hds
+*.cbc
+*.ucn
+*.lst
+*.oc
+*.grb
+
+# FloPy workspace folders
+mf6_*/
+workspace/
+modflow_*/
+
+# Outputs folder
+outputs/
+*.npz
+*.npy
