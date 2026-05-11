@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Major project.kml</name>
+	<Schema name="Water_Quality_GoogleEarth" id="S_Water_Quality_GoogleEarth_SDDDDDDIDD">
+		<SimpleField type="string" name="Sample_ID"><displayName>&lt;b&gt;Sample_ID&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Latitude"><displayName>&lt;b&gt;Latitude&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Longitude"><displayName>&lt;b&gt;Longitude&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="pH"><displayName>&lt;b&gt;pH&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="DO_mgL"><displayName>&lt;b&gt;DO_mgL&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Temperature_C"><displayName>&lt;b&gt;Temperature_C&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="EC_uScm"><displayName>&lt;b&gt;EC_uScm&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="TDS_measured_ppm"><displayName>&lt;b&gt;TDS_measured_ppm&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="TDS_derived_ppm"><displayName>&lt;b&gt;TDS_derived_ppm&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Salinity_derived_ppt"><displayName>&lt;b&gt;Salinity_derived_ppt&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="hlightPointStyle0">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Sample_ID</b></td><td>$[Water_Quality_GoogleEarth/Sample_ID]</td></tr>
+  <tr><td><b>Latitude</b></td><td>$[Water_Quality_GoogleEarth/Latitude]</td></tr>
+  <tr><td><b>Longitude</b></td><td>$[Water_Quality_GoogleEarth/Longitude]</td></tr>
+  <tr><td><b>pH</b></td><td>$[Water_Quality_GoogleEarth/pH]</td></tr>
+  <tr><td><b>DO_mgL</b></td><td>$[Water_Quality_GoogleEarth/DO_mgL]</td></tr>
+  <tr><td><b>Temperature_C</b></td><td>$[Water_Quality_GoogleEarth/Temperature_C]</td></tr>
+  <tr><td><b>EC_uScm</b></td><td>$[Water_Quality_GoogleEarth/EC_uScm]</td></tr>
+  <tr><td><b>TDS_measured_ppm</b></td><td>$[Water_Quality_GoogleEarth/TDS_measured_ppm]</td></tr>
+  <tr><td><b>TDS_derived_ppm</b></td><td>$[Water_Quality_GoogleEarth/TDS_derived_ppm]</td></tr>
+  <tr><td><b>Salinity_derived_ppt</b></td><td>$[Water_Quality_GoogleEarth/Salinity_derived_ppt]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="normPointStyle0">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Sample_ID</b></td><td>$[Water_Quality_GoogleEarth/Sample_ID]</td></tr>
+  <tr><td><b>Latitude</b></td><td>$[Water_Quality_GoogleEarth/Latitude]</td></tr>
+  <tr><td><b>Longitude</b></td><td>$[Water_Quality_GoogleEarth/Longitude]</td></tr>
+  <tr><td><b>pH</b></td><td>$[Water_Quality_GoogleEarth/pH]</td></tr>
+  <tr><td><b>DO_mgL</b></td><td>$[Water_Quality_GoogleEarth/DO_mgL]</td></tr>
+  <tr><td><b>Temperature_C</b></td><td>$[Water_Quality_GoogleEarth/Temperature_C]</td></tr>
+  <tr><td><b>EC_uScm</b></td><td>$[Water_Quality_GoogleEarth/EC_uScm]</td></tr>
+  <tr><td><b>TDS_measured_ppm</b></td><td>$[Water_Quality_GoogleEarth/TDS_measured_ppm]</td></tr>
+  <tr><td><b>TDS_derived_ppm</b></td><td>$[Water_Quality_GoogleEarth/TDS_derived_ppm]</td></tr>
+  <tr><td><b>Salinity_derived_ppt</b></td><td>$[Water_Quality_GoogleEarth/Salinity_derived_ppt]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="pointStyleMap0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder id="layer 0">
+		<name>Water_Quality_GoogleEarth</name>
+		<open>1</open>
+		<Placemark>
+			<name>GW1</name>
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<colorMode>random</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<colorMode>random</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<colorMode>random</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Water_Quality_GoogleEarth_SDDDDDDIDD">
+					<SimpleData name="Sample_ID">GW1</SimpleData>
+					<SimpleData name="Latitude">13.0118</SimpleData>
+					<SimpleData name="Longitude">74.7977</SimpleData>
+					<SimpleData name="pH">5.08</SimpleData>
+					<SimpleData name="DO_mgL">2.51</SimpleData>
+					<SimpleData name="Temperature_C">28.8</SimpleData>
+					<SimpleData name="EC_uScm">103</SimpleData>
+					<SimpleData name="TDS_measured_ppm">15</SimpleData>
+					<SimpleData name="TDS_derived_ppm">14.2937</SimpleData>
+					<SimpleData name="Salinity_derived_ppt">0.033504</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>74.79774400000001,13.01179300000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>GW2</name>
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<colorMode>random</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<colorMode>random</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<colorMode>random</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Water_Quality_GoogleEarth_SDDDDDDIDD">
+					<SimpleData name="Sample_ID">GW2</SimpleData>
+					<SimpleData name="Latitude">13.0072</SimpleData>
+					<SimpleData name="Longitude">74.7954</SimpleData>
+					<SimpleData name="pH">6.04</SimpleData>
+					<SimpleData name="DO_mgL">2.92</SimpleData>
+					<SimpleData name="Temperature_C">27.6</SimpleData>
+					<SimpleData name="EC_uScm">178</SimpleData>
+					<SimpleData name="TDS_measured_ppm">40</SimpleData>
+					<SimpleData name="TDS_derived_ppm">73.1939</SimpleData>
+					<SimpleData name="Salinity_derived_ppt">0.071065</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>74.79544299999999,13.00716100000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>TW3</name>
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<colorMode>random</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<colorMode>random</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<colorMode>random</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Water_Quality_GoogleEarth_SDDDDDDIDD">
+					<SimpleData name="Sample_ID">TW3</SimpleData>
+					<SimpleData name="Latitude">13.0135</SimpleData>
+					<SimpleData name="Longitude">74.795</SimpleData>
+					<SimpleData name="pH">6.41</SimpleData>
+					<SimpleData name="DO_mgL">2.86</SimpleData>
+					<SimpleData name="Temperature_C">29.1</SimpleData>
+					<SimpleData name="EC_uScm">195</SimpleData>
+					<SimpleData name="TDS_measured_ppm">55</SimpleData>
+					<SimpleData name="TDS_derived_ppm">79.0203</SimpleData>
+					<SimpleData name="Salinity_derived_ppt">0.075693</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>74.795046,13.01350600000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>TW4</name>
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<colorMode>random</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<colorMode>random</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<colorMode>random</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Water_Quality_GoogleEarth_SDDDDDDIDD">
+					<SimpleData name="Sample_ID">TW4</SimpleData>
+					<SimpleData name="Latitude">13.0099</SimpleData>
+					<SimpleData name="Longitude">74.7964</SimpleData>
+					<SimpleData name="pH">6.43</SimpleData>
+					<SimpleData name="DO_mgL">2.02</SimpleData>
+					<SimpleData name="Temperature_C">28.5</SimpleData>
+					<SimpleData name="EC_uScm">225.1</SimpleData>
+					<SimpleData name="TDS_measured_ppm">66</SimpleData>
+					<SimpleData name="TDS_derived_ppm">93.972</SimpleData>
+					<SimpleData name="Salinity_derived_ppt">0.088357</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>74.79643400000002,13.009851,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>GW5</name>
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<colorMode>random</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<colorMode>random</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<colorMode>random</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Water_Quality_GoogleEarth_SDDDDDDIDD">
+					<SimpleData name="Sample_ID">GW5</SimpleData>
+					<SimpleData name="Latitude">13.0045</SimpleData>
+					<SimpleData name="Longitude">74.7908</SimpleData>
+					<SimpleData name="pH">6.29</SimpleData>
+					<SimpleData name="DO_mgL">5.23</SimpleData>
+					<SimpleData name="Temperature_C">26.5</SimpleData>
+					<SimpleData name="EC_uScm">166.5</SimpleData>
+					<SimpleData name="TDS_measured_ppm">30</SimpleData>
+					<SimpleData name="TDS_derived_ppm">69.1748</SimpleData>
+					<SimpleData name="Salinity_derived_ppt">0.067893</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>74.79081500000001,13.004476,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>TW6</name>
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<colorMode>random</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<colorMode>random</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<colorMode>random</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Water_Quality_GoogleEarth_SDDDDDDIDD">
+					<SimpleData name="Sample_ID">TW6</SimpleData>
+					<SimpleData name="Latitude">13.0063</SimpleData>
+					<SimpleData name="Longitude">74.7895</SimpleData>
+					<SimpleData name="pH">6.98</SimpleData>
+					<SimpleData name="DO_mgL">2.66</SimpleData>
+					<SimpleData name="Temperature_C">28.4</SimpleData>
+					<SimpleData name="EC_uScm">337.2</SimpleData>
+					<SimpleData name="TDS_measured_ppm">10</SimpleData>
+					<SimpleData name="TDS_derived_ppm">151.528</SimpleData>
+					<SimpleData name="Salinity_derived_ppt">0.145236</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>74.78953799999998,13.00629699999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>GW7</name>
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<colorMode>random</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<colorMode>random</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<colorMode>random</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Water_Quality_GoogleEarth_SDDDDDDIDD">
+					<SimpleData name="Sample_ID">GW7</SimpleData>
+					<SimpleData name="Latitude">13.0058</SimpleData>
+					<SimpleData name="Longitude">74.7896</SimpleData>
+					<SimpleData name="pH">6.86</SimpleData>
+					<SimpleData name="DO_mgL">2.75</SimpleData>
+					<SimpleData name="Temperature_C">27.4</SimpleData>
+					<SimpleData name="EC_uScm">327.6</SimpleData>
+					<SimpleData name="TDS_measured_ppm">115</SimpleData>
+					<SimpleData name="TDS_derived_ppm">149.29</SimpleData>
+					<SimpleData name="Salinity_derived_ppt">0.143794</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>74.78963899999998,13.00579899999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>TW8</name>
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<colorMode>random</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<colorMode>random</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<colorMode>random</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Water_Quality_GoogleEarth_SDDDDDDIDD">
+					<SimpleData name="Sample_ID">TW8</SimpleData>
+					<SimpleData name="Latitude">13.0111</SimpleData>
+					<SimpleData name="Longitude">74.7894</SimpleData>
+					<SimpleData name="pH">7.35</SimpleData>
+					<SimpleData name="DO_mgL">2.75</SimpleData>
+					<SimpleData name="Temperature_C">30.1</SimpleData>
+					<SimpleData name="EC_uScm">543.6</SimpleData>
+					<SimpleData name="TDS_measured_ppm">260</SimpleData>
+					<SimpleData name="TDS_derived_ppm">251.739</SimpleData>
+					<SimpleData name="Salinity_derived_ppt">0.226911</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>74.78939300000002,13.011133,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>GW9</name>
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<colorMode>random</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<colorMode>random</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<colorMode>random</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Water_Quality_GoogleEarth_SDDDDDDIDD">
+					<SimpleData name="Sample_ID">GW9</SimpleData>
+					<SimpleData name="Latitude">13.0165</SimpleData>
+					<SimpleData name="Longitude">74.7885</SimpleData>
+					<SimpleData name="pH">7.29</SimpleData>
+					<SimpleData name="DO_mgL">7.95</SimpleData>
+					<SimpleData name="Temperature_C">27.2</SimpleData>
+					<SimpleData name="EC_uScm">201</SimpleData>
+					<SimpleData name="TDS_measured_ppm">69</SimpleData>
+					<SimpleData name="TDS_derived_ppm">84.7701</SimpleData>
+					<SimpleData name="Salinity_derived_ppt">0.080862</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>74.78846600000001,13.01651000000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>GW10</name>
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<colorMode>random</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<colorMode>random</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<colorMode>random</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Water_Quality_GoogleEarth_SDDDDDDIDD">
+					<SimpleData name="Sample_ID">GW10</SimpleData>
+					<SimpleData name="Latitude">13.0091</SimpleData>
+					<SimpleData name="Longitude">74.7903</SimpleData>
+					<SimpleData name="pH">6.82</SimpleData>
+					<SimpleData name="DO_mgL">5.24</SimpleData>
+					<SimpleData name="Temperature_C">26.9</SimpleData>
+					<SimpleData name="EC_uScm">228.5</SimpleData>
+					<SimpleData name="TDS_measured_ppm">85</SimpleData>
+					<SimpleData name="TDS_derived_ppm">98.5067</SimpleData>
+					<SimpleData name="Salinity_derived_ppt">0.092457</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>74.79029100000001,13.009051,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>GW11</name>
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<colorMode>random</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<colorMode>random</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<colorMode>random</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Water_Quality_GoogleEarth_SDDDDDDIDD">
+					<SimpleData name="Sample_ID">GW11</SimpleData>
+					<SimpleData name="Latitude">13.0072</SimpleData>
+					<SimpleData name="Longitude">74.7924</SimpleData>
+					<SimpleData name="pH">6.21</SimpleData>
+					<SimpleData name="DO_mgL">2.3</SimpleData>
+					<SimpleData name="Temperature_C">26.4</SimpleData>
+					<SimpleData name="EC_uScm">80.03</SimpleData>
+					<SimpleData name="TDS_measured_ppm">28</SimpleData>
+					<SimpleData name="TDS_derived_ppm">4.68268</SimpleData>
+					<SimpleData name="Salinity_derived_ppt">0.027248</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>74.79242199999999,13.00717400000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>TW12</name>
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<colorMode>random</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<colorMode>random</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<colorMode>random</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Water_Quality_GoogleEarth_SDDDDDDIDD">
+					<SimpleData name="Sample_ID">TW12</SimpleData>
+					<SimpleData name="Latitude">13.0051</SimpleData>
+					<SimpleData name="Longitude">74.7918</SimpleData>
+					<SimpleData name="pH">6.56</SimpleData>
+					<SimpleData name="DO_mgL">2.83</SimpleData>
+					<SimpleData name="Temperature_C">29.7</SimpleData>
+					<SimpleData name="EC_uScm">240.6</SimpleData>
+					<SimpleData name="TDS_measured_ppm">100</SimpleData>
+					<SimpleData name="TDS_derived_ppm">98.9945</SimpleData>
+					<SimpleData name="Salinity_derived_ppt">0.092369</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>74.79182900000001,13.00509,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>GW13</name>
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<colorMode>random</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<colorMode>random</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<colorMode>random</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Water_Quality_GoogleEarth_SDDDDDDIDD">
+					<SimpleData name="Sample_ID">GW13</SimpleData>
+					<SimpleData name="Latitude">13.0147</SimpleData>
+					<SimpleData name="Longitude">74.7923</SimpleData>
+					<SimpleData name="pH">5.61</SimpleData>
+					<SimpleData name="DO_mgL">6.17</SimpleData>
+					<SimpleData name="Temperature_C">27.6</SimpleData>
+					<SimpleData name="EC_uScm">70.59</SimpleData>
+					<SimpleData name="TDS_measured_ppm">15</SimpleData>
+					<SimpleData name="TDS_derived_ppm">0.4481</SimpleData>
+					<SimpleData name="Salinity_derived_ppt">0.023485</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>74.79229299999999,13.01474699999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.6.10441"></atom:link>
+	</Folder>
+</Document>
+</kml>
